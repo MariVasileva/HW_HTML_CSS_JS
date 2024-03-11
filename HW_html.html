@@ -9,9 +9,11 @@
     <body>
         <p>Hi world</p>
         <svg width="100" height="100">
-            <circle cx="50" cy="50" r="40" stroke-width="2" fill="red"/> <--Отобразит красный круг-->
+        <circle cx="50" cy="50" r="40" stroke-width="2" fill="red"/> <!--Отобразит красный круг-->
+        <br>
         <a href="myFile.txt" download="">Hi world</a>
-        <a href="#header" title="Заголовок сайта">Заголовок сайта</a> 
+        <br>
+        <a href="#header" title="Заголовок сайта">Заголовок</a> 
         <h2 id="header">ОПЛОПОПР</h2>   
         <a href="https://oiplug.com/blog/git/5049/" title="">
             <img src="https://clck.ru/33c9DW" width="610" height="280"  alt="">
@@ -30,7 +32,64 @@
           Измените ширину границы на 2 пикселя, стиль double и добавьте синий цвет по имени
         </h2>
         <h2 style="font-family:Verdana;background-color:rgb(255,0,0);color:blue">Я научился использовать атрибут стиля!</h2>
-        
+        <br>
+        <input type="text" name="username" placeholder="Введите имя">
+        <select name="country">
+            <option value="usa">Россия</option>
+            <option value="canada">Беларусь</option>
+        </select>
+        <input type="checkbox" name="subscribe" value="yes">
+        <br>
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username">
+     
+        <form>
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <input type="submit" value="Отправить"> 
+            <input type="reset" value="Сбросить">
+        </form>
+        <input type="text" name="username"><br><br>
+        <input type="password" name="password"><br><br>
+        <input type="email" name="email"><br><br>
+        <input type="number" name="quantity"><br><br>
+        <input type="date" name="birthdate"><br><br>
+        <input type="checkbox" name="subscribe" value="yes"><br><br>
+        <input type="radio" name="gender" value="male">
+        <input type="radio" name="gender" value="male"><br><br>
+        <input type="file" name="uploadFile"><br><br>
+        <input type="text" name="username" placeholder="Введите ваше имя"><br><br>
+        <input type="email" name="email" required><br><br>
+        <input type="text" name="username" value="John" disabled><br><br>
+        <input type="text" name="username" value="John" readonly><br><br>
+        <form>
+            <label for="email">Почта: </label>
+            <input type="email" id="email">
+            <br><br>
+            <label for="pass">Пароль: </label>
+            <input type="password" id="pass">
+            <br><br>
+            <input type="submit" value="Отправить">
+        </form>
+        <form>
+            <fieldset>
+                <legend>Поле входа</legend>
+                <p><label for="name"><em>Имя</em></label><input type="text" id="name"></p>
+                <p><label for="email">E-mail</label><input type="email" id="email"></p>
+                <p><label for="pass">Password</label><input type="password" id="pass"></p> 
+                <p><input type="submit" value="Отправить"></p>
+            </fieldset>        
+        </form>
+        <br><br>
+        <form>
+            <div style="background-color:black">
+                <a href="https://discord.com" style="color:white">Я хочу создать свой первый сайт!</a>    
+            </div> 
+        </form>
+
+
+
 
     </body>
 </html>
