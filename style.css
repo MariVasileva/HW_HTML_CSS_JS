@@ -1,5 +1,5 @@
 body{
-    background: blue;
+    background: rgb(171, 192, 238);
     color: white;
   }
   h1{
@@ -29,3 +29,38 @@ body{
   h3{
     font-size:14px;
   }
+  p#psevdo:first-letter{
+    color:red;
+  }
+  p#psevdo:first-line{
+    color:black;
+  }
+  a{
+    color:green;
+    text-decoration:none;
+  }
+  a:hover{
+    color:red;
+  }
+  li:first-child {
+    color: red;
+  }
+  li:nth-child(even) {
+    background-color: lightgray;
+  }
+  li:nth-child(2n) {
+    text-decoration: underline;
+  }
+  .magic-text p::first-letter {
+    font-size: 150%;
+    color: purple;
+    text-transform: uppercase;
+  }
+  a[target="_blank"] {
+    text-decoration: underline red;
+  }
+  a[href^="http://"]::after,
+a[href^="https://"]::after {
+  content: " →";
+  color: blue;
+}
