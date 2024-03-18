@@ -49,7 +49,26 @@ p #qq {
     text-align:center;
     text-decoration:underline;
 }
+  p#wh{
+    border:1px solid red;
+    padding:10px;
+    margin:50px;
+    width:100px;
+    height:50px;
+  }
 
+.logo {
+    text-align: center;
+    color: #3366cc; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Шрифт текста */
+    font-size:3em;
+    background-image: url('logo-background.jpg'); /* Фоновое изображение */
+    background-size: cover;
+    padding: 20px;
+    border: 2px solid #3366cc; /* Обводка текста */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 0 10px rgba(51, 102, 204, 0.5); /* Тень */
+}
 
 
 
