@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(45deg, #194cf5, #94aae9);
+    color: rgb(255, 255, 253);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 253);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem; /*вн отступы*/
+    text-align: center; /*центруем текст*/
+}
+section {
+    margin-bottom: 2rem;
+
+}
+
+.services, .portfolio {
+    display: flex; /*флексбокс*/
+    flex-wrap: wrap;/*перенос если в одну строку не влазит/nowrap-тестится рядом*/
+    justify-content: center; /*центруем элементы*/
+    gap: 1rem;/*растояние между*/
+
+}
+
+.service, .portfolio-item {
+    background: #d1dad5; /*цвет*/
+    border-radius: 8px; /*скруглим углы*/
+    box-shadow: 0, 4px, 6px, rgba(0, 0, 0, 0.1); /*тень по оси х, по оси у, размытость, полупрозрачный черный цвет*/
+    padding: 1rem; /*вн отступ*/
+    flex: 1 1 calc(33.333% - 1rem); /*элемент занимает треть пространства минус промежуток*/
+    max-width: calc(33.333% - 1rem); /*максим место*/
+}
+.portfolio-item img {
+    max-width: 100%; /*изобр занимает макс ширину родительск элемента*/
+    border-radius: 8px; /*скругл углв*/
+}
+
+footer {
+    background-color: black;
+    color: write;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .service, .portfolio-item {
+        flex: 1 1 calc(50% - 1rem); /*элементы будут анимать половину минус отступы*/
+        max-width: calc(50% - 1rem); /*-*-*/
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;/*элеметы списка в колоку*/ 
+        gap: 0.5rem; 
+    }
+    .service, .portfolio-item {
+        flex: 1 1 100%; /*элементы будут анимать половину минус отступы*/
+        max-width: 100%; /*-*-*/
+    }
+    header {
+        padding: 1rem;
+
+    }
+    main {
+        padding: 1rem;
+        
+    }
+}
